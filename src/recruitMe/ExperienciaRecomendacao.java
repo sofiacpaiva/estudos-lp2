@@ -18,12 +18,12 @@ public class ExperienciaRecomendacao extends Experiencia {
 
 	@Override
 	public double calculaPontuacao() {
-		return this.aval + super.valor_base;	
+		return this.aval + valor_base;	
 		}
 
 	@Override
-	public String toString() {
-		return "ExperienciaRecomendacao [prof=" + prof + ", carta=" + carta + ", aval=" + aval + ", pontuacao=" + calculaPontuacao() + "]";
+	public String exibeDetalhamento(int codigo) {
+		return "ExperienciaRecomendacao#" + codigo + "[prof=" + prof + ", carta=" + carta + ", aval=" + aval + ", pontuacao=" + calculaPontuacao() + "]";
 	}
 
 }

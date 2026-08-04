@@ -52,7 +52,7 @@ public class Candidato {
 	public String[] listaExperiencias() {
 		String [] listagem = new String[experiencias.size()];
 		for (int i = 0; i < listagem.length; i++) {
-			listagem[i] = experiencias.get(i).toString();
+			listagem[i] = experiencias.get(i).exibeDetalhamento(i+1);
 		}
 		return listagem;
 	}

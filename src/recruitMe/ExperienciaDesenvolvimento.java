@@ -15,12 +15,12 @@ public class ExperienciaDesenvolvimento extends Experiencia {
 
 	@Override
 	public double calculaPontuacao() {
-		return (super.valor_base*nFiles)/10;
+		return (valor_base*nFiles)/10.0;
 	}
 
 	@Override
-	public String toString() {
-		return "ExperienciaDesenvolvimento [descricao=" + descricao + ", URL=" + URL + ", nFiles=" + nFiles + ", pontuacao=" + calculaPontuacao() + "]";
+	public String exibeDetalhamento(int codigo) {
+		return "ExperienciaDesenvolvimento#" + codigo + "[descricao=" + descricao + ", URL=" + URL + ", nFiles=" + nFiles + ", pontuacao=" + calculaPontuacao() + "]";
 	}
 
 

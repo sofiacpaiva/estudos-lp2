@@ -24,8 +24,8 @@ public class ExperienciaRepresentacao extends Experiencia {
 
 	
 	@Override
-	public String toString() {
-		return "ExperienciaRepresentacao [cargo=" + cargo + ", semestres=" + semestres + ", eleito=" + eleito
+	public String exibeDetalhamento(int codigo) {
+		return "ExperienciaRepresentacao#" + codigo + "[cargo=" + cargo + ", semestres=" + semestres + ", eleito=" + eleito
 				+ ", institucional=" + institucional + ", pontuacao=" + calculaPontuacao() + "]";
 	}
 

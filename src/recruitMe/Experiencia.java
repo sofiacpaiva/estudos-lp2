@@ -10,7 +10,9 @@ public abstract class Experiencia {
 	public int getValorBase() {
 		return this.valor_base;
 	}
+	
 	public abstract double calculaPontuacao();
 
+	public abstract String exibeDetalhamento(int codigo);
 
 }
